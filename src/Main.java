@@ -7,13 +7,32 @@ void main () {
     double[] masiv1 = {1.57, 7.654, 9.986};
     int[] arr = {1, 2, 3, 4, 5, 6, 7, 8};
     System.out.println("Задача 2");
-    System.out.println(masiv0[0] + ", " + masiv0[1] + ", " + masiv0[2]);
-    System.out.println(masiv1[0] + ", " + masiv1[1] + ", " + masiv1[2]);
-    System.out.println(arr[0] + ", " + arr[1] + ", " + arr[2] + ", " + arr[3] + ", " + arr[4] + ", " + arr[5] + ", " + arr[6] + ", " + arr[7]);
+    System.out.println(Arrays.toString(masiv0));
+    System.out.println(Arrays.toString(masiv1));
+    System.out.println(Arrays.toString(arr));
     System.out.println("Задача 3");
-    System.out.println(masiv0[2] + ", " + masiv0[1] + ", " + masiv0[0]);
-    System.out.println(masiv1[2] + ", " + masiv1[1] + ", " + masiv1[0]);
-    System.out.println("Задача 4");
+    for (int index = masiv0.length - 1; index >= 0; index-- ) {
+        System.out.print(masiv0[index]);
+        if (index > 0) {
+            System.out.print(", ");
+        }
+   }
+    System.out.println();
+    for (int i = masiv1.length - 1; i >= 0; i--) {
+        System.out.print(masiv1[i]);
+        if (i > 0) {
+            System.out.print(", ");
+        }
+    }
+    System.out.println();
+    for (int in = arr.length - 1; in >= 0; in--) {
+        System.out.print(arr[in]);
+        if (in > 0) {
+            System.out.print(", ");
+        }
+    }
+    System.out.println();
+   System.out.println("Задача 4");
     int i = 0;
     while (i < masiv0.length) {
         if (masiv0[i] % 2 == 0) {
